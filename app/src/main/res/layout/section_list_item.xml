@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/section_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:drawableStartCompat="@drawable/ic_baseline_arrow_drop_up_24"
+            tools:text="Comedy" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movie_recycler"
+            android:layout_width="match_parent"
+            android:layout_below="@id/section_name_text"
+            android:layout_height="wrap_content"
+            tools:itemCount="5"
+            tools:listitem="@layout/movie_list_item" />
+
+    </RelativeLayout>
+</layout>

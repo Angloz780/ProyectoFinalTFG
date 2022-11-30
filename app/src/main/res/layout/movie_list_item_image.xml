@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="movie"
+            type="com.tfg.proyectofinaltfg.pelicula.Movie" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:padding="8dp">
+
+        <FrameLayout
+            android:id="@+id/image_layout"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/movie_image"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:src="@android:mipmap/sym_def_app_icon" />
+
+            <ImageView
+                android:id="@+id/play_movie_button"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:padding="16dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/movie_name_text"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_layout"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:text="@{movie.name}"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="The lord of the rings" />
+
+    </RelativeLayout>
+</layout>

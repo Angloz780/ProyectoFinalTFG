@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/atenea"
+    tools:context=".usuarios.LoginActivity">
+
+    <ImageView
+        android:layout_width="187dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Atenea"
+        android:textSize="30dp"
+
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                >
+
+                <EditText
+                    android:id="@+id/l_usu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Usuario"
+                    android:digits="abcdefghijklmnñopkrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ.@"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <EditText
+                    android:id="@+id/l_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña"
+                    android:digits="abcdefghijklmnñopkrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="40dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/bContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:clickable="true"
+            android:gravity="right"
+            android:src="@drawable/flecha"
+            android:visibility="gone"
+            app:tint="#F8F4F4"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
