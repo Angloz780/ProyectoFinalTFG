@@ -19,7 +19,8 @@
         <activity android:name=".principal.MainActivity"
             android:exported="true"/>
 
-
+        <activity android:name=".principal.SecondActivity"
+            android:exported="true"/>
 
         <activity
             android:name=".usuarios.LoginActivity"

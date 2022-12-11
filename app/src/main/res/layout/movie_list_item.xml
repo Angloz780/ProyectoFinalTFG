@@ -29,6 +29,7 @@
             android:padding="16dp"
             android:text="@{movie.name}"
             android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
             android:textSize="16sp"
             tools:text="The lord of the rings" />
 
